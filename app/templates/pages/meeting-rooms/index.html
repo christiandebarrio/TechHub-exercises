@@ -6,7 +6,7 @@
 
       <div class="wrap-image">
         <div class="wrap-price">
-          <p class="price">£<span class="price-color">{{ room.fields.hourlyPrice | number : 2 }} </span><span class="price-hour">hour</span></p>
+          <p class="price">£<span class="price-color">{{ room.fields.hourlyPrice | number : 2 }} </span><span class="price-hour"><span class="glyphicon glyphicon-time"></span> hour</span></p>
         </div>
         <img ng-src="{{ room.fields.photos[0].fields.file.url }}" alt="image of room {{ room.fields.name }}" class="image">
       </div>
