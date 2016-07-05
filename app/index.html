@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="techhubExercise">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>TechHub Exercises</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Fonts -->
+  <link href='https://fonts.googleapis.com/css?family=Muli:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
+  <!-- Vendor Styles -->
+  <link rel="stylesheet" href="vendor/css/jquery-ui.min.css"/>
+  <link rel="stylesheet" href="vendor/css/bootstrap.min.css"/>
+  <!-- Own Styles -->
+  <link rel="stylesheet" href="styles/app.css"/> 
+  <!-- favicon -->
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <!-- contenful -->
+  <script src="https://npmcdn.com/contentful@latest/browser-dist/contentful.min.js"></script>
+</head>
+<body>
+  
+  <header>
+    <div class="container">
+      <a ng-href="#/">
+        <img src="https://d1e6a3jvdxo3ln.cloudfront.net/images/website/techhub_3d_logo_png.png" alt="Logo" class="logo-home">
+      </a>
+    </div>
+  </header>
+
+  <div ng-view autoscroll="true"></div>
+
+  <footer>
+    <div id="footer-container" class="container">
+
+      <div class="row">
+        <div id="legal-txt" class="text-center">
+          <p>By Christian de Barrio.</p>
+        </div>
+      </div>
+
+    </div>
+
+  </footer>
+</body>
+
+<!-- Vendor -->
+<script src="vendor/js/jquery-2.2.3.min.js"></script>
+<script src="vendor/js/angular.min.js"></script>
+<script src="vendor/js/angular-route.min.js"></script>
+<script src="vendor/js/bootstrap.min.js"></script>
+
+<!-- App -->
+<script src="js/app.js"></script>
+<script src="js/routes.js"></script>
+
+<!-- Directives -->
+
+<!-- Controllers -->
+<script src="js/controllers/welcome-controller.js"></script>
+<script src="js/controllers/meeting-rooms-controller.js"></script>
+
+<!-- Filters -->
+
+<!-- Services -->
+
+</html>

@@ -1,0 +1,72 @@
+// colors responsive variables
+$background: #EFEFEF
+$dark: #131313
+$yellow: #f8b232
+$price-background: rgba(0, 0, 0, 0.7)
+
+// breakpoints responsive variables
+$break-xs: 767px
+$break-sm: 768px
+$break-md: 992px
+
+body
+  background-color: $background
+  color: $dark
+  font-family: 'Muli', sans-serif
+  font-size: 17px
+  font-weight: 300
+
+a
+  color: $yellow
+  &:hover
+    color: lighten($yellow, 5%)
+
+header
+  background-color: $dark
+  padding: 40px
+
+footer
+  background-color: $dark
+  color: $yellow
+  #footer-container
+    padding: 40px
+    #legal-txt
+      margin-top: 30px
+
+.logo-home
+  max-width: 220px
+
+.card
+  padding: 0
+  .wrap-card
+    margin: 5px
+    padding: 5px
+    .wrap-image
+      position: relative
+      img
+        width: 100%
+      .wrap-price
+        position: absolute
+        top: 75%
+        background-color: $price-background
+        border-radius: 0 7px 7px 0
+        padding: 10px 15px
+        .price
+          margin: 0
+          color: $yellow
+          font-size: 22px
+          .price-color
+            color: white
+            text-weight: bold
+          .price-hour
+            font-size: 14px
+    ul.room-details
+      padding: 0
+      font-size: 15px
+      li
+        list-style: none
+        white-space: nowrap
+        .title
+          color: $yellow
+
+

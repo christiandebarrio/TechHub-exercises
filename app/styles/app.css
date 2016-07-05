@@ -1,0 +1,61 @@
+body {
+  background-color: #EFEFEF;
+  color: #131313;
+  font-family: "Muli", sans-serif;
+  font-size: 17px;
+  font-weight: 300; }
+
+a {
+  color: #f8b232; }
+  a:hover {
+    color: #f9bb4b; }
+
+header {
+  background-color: #131313;
+  padding: 40px; }
+
+footer {
+  background-color: #131313;
+  color: #f8b232; }
+  footer #footer-container {
+    padding: 40px; }
+    footer #footer-container #legal-txt {
+      margin-top: 30px; }
+
+.logo-home {
+  max-width: 220px; }
+
+.card {
+  padding: 0; }
+  .card .wrap-card {
+    margin: 5px;
+    padding: 5px; }
+    .card .wrap-card .wrap-image {
+      position: relative; }
+      .card .wrap-card .wrap-image img {
+        width: 100%; }
+      .card .wrap-card .wrap-image .wrap-price {
+        position: absolute;
+        top: 75%;
+        background-color: rgba(0, 0, 0, 0.7);
+        border-radius: 0 7px 7px 0;
+        padding: 10px 15px; }
+        .card .wrap-card .wrap-image .wrap-price .price {
+          margin: 0;
+          color: #f8b232;
+          font-size: 22px; }
+          .card .wrap-card .wrap-image .wrap-price .price .price-color {
+            color: white;
+            text-weight: bold; }
+          .card .wrap-card .wrap-image .wrap-price .price .price-hour {
+            font-size: 14px; }
+    .card .wrap-card ul.room-details {
+      padding: 0;
+      font-size: 15px; }
+      .card .wrap-card ul.room-details li {
+        list-style: none;
+        white-space: nowrap; }
+        .card .wrap-card ul.room-details li .title {
+          color: #f8b232; }
+
+/*# sourceMappingURL=app.css.map */

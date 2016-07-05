@@ -1,0 +1,35 @@
+<section id="rooms-index" class="container">
+  <h1>Meeting Rooms</h1>
+
+  <article ng-repeat="room in rooms" class="card col-md-4">
+    <div class="wrap-card">
+
+      <div class="wrap-image">
+        <div class="wrap-price">
+          <p class="price">£<span class="price-color">{{ room.fields.hourlyPrice | number : 2 }} </span><span class="price-hour">hour</span></p>
+        </div>
+        <img ng-src="{{ room.fields.photos[0].fields.file.url }}" alt="image of room {{ room.fields.name }}" class="image">
+      </div>
+
+      <h1>{{ room.fields.name }}</h1>
+      <!-- <p>Decription: {{ room.fields.description }}</p> -->
+      
+      <ul class="room-details">
+        <li>
+          <span class="title">Capacity: </span>{{ room.fields.capacity }}
+        </li>
+        <li>
+          <span class="title">Location: </span>{{ room.fields.location }}
+        </li>
+        <li>
+          <span class="title">Floor: </span>{{ room.fields.floor }}
+        </li>
+        <li>
+          <span class="title">Open: </span>{{ room.fields.openingHour | date : "HH':'mm" }} to {{ room.fields.closingHour | date : "HH':'mm" }}
+        </li>
+      </ul>
+      
+    </div>
+  </article>
+  
+</section>
