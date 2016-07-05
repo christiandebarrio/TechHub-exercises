@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Choose available slots to book">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Book a room</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+  <style>
+    body {
+      padding: 20px;
+    }
+
+    .list-group-item {
+      cursor: pointer;
+    }
+
+    .list-group-item.selected,
+    .list-group-item.selected:focus,
+    .list-group-item.selected:hover {
+      z-index: 2;
+      color: #fff;
+      background-color: #337ab7;
+      border-color: #337ab7;
+    }
+    .container {
+      max-width: 750px;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="list-group">
+          <span href="#" class="list-group-item">8:30am</span>
+          <span href="#" class="list-group-item">9:00am</span>
+          <span href="#" class="list-group-item">9:30am</span>
+          <span href="#" class="list-group-item">10:00am</span>
+          <span href="#" class="list-group-item">10:30am</span>
+          <span href="#" class="list-group-item">11:00am</span>
+          <span href="#" class="list-group-item">11:30am</span>
+        </div>
+        <p class="text-right">
+          <a href="#" class="btn btn-primary disabled btn-lg">Book</a>
+        </p>
+      </div>
+      <div class="col-sm-8">
+        <p>
+          Write an algorithm to allow people to select slots for their booking.
+        </p>
+        Requirements:
+        <ul>
+          <li>Slots are 30min each but the minimum amount bookable is 1 hour</li>
+          <li>When 2+ slots are selected remove the <code>.disabled</code> class from the book button</li>
+          <li>If less than 2 slots are selected the book button should be <code>.disabled</code></li>
+          <li><strong>You can only select consecutive slots</strong></li>
+          <li>Add/remove the class <code>.selected</code> to the <code>.list-group-item</code> if it's a valid slot</li>
+          <li>Show an error if it's not a valid slot</li>
+        </ul>
+        Write your code in this page and <code>booking.js</code>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+  <script src="booking.js"></script>
+</body>
+
+</html>
