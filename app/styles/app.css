@@ -18,12 +18,16 @@ footer {
   background-color: #131313;
   color: #f8b232; }
   footer #footer-container {
-    padding: 40px; }
+    padding: 15px;
+    margin-top: 40px; }
     footer #footer-container #legal-txt {
-      margin-top: 30px; }
+      margin-top: 15px; }
 
 .logo-home {
   max-width: 220px; }
+
+.content {
+  margin-top: 30px; }
 
 .card {
   padding: 0; }
