@@ -1,3 +1,16 @@
+Instructions to install in localhost:
+
+- Clone the Git repository in your computer.
+- Navigate to the folder app.
+- Use the <a href="https://github.com/indexzero/http-server">http-simple</a> to generate a localserver.
+- Open Chrome and go to localhost:8080.
+
+
+
+
+
+
+
 Please put your code on GitHub or BitBucket, as you prefer, and after 72 hours don't do any more commits.
 
 ## 1) Meeting Rooms
