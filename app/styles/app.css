@@ -62,4 +62,16 @@ footer {
         .card .wrap-card ul.room-details li .title {
           color: #f8b232; }
 
+.list-group-item {
+  cursor: pointer; }
+  .list-group-item.selected {
+    z-index: 2;
+    color: #fff;
+    background-color: #f8b232;
+    border-color: #f8b232; }
+
+#bookButton {
+  background-color: #f8b232;
+  border-color: #f8b232; }
+
 /*# sourceMappingURL=app.css.map */

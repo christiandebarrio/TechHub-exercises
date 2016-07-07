@@ -13,14 +13,14 @@ angular.module('techhubExercise')
       controllerAs: 'meetingController'
     })
 
-    .when('/booking-slots', {
-      templateUrl: 'templates/pages/booking-slots.html',
-      controller: 'BookingController',
-      controllerAs: 'bookingController'
+    .when('/booking', {
+      templateUrl: 'templates/pages/bookings/booking.html',
+      controller: 'BookingsController',
+      controllerAs: 'bookingsController'
     })
 
     .when('/events', {
-      templateUrl: 'templates/pages/events.html',
+      templateUrl: 'templates/pages/events/index.html',
       controller: 'EventsController',
       controllerAs: 'eventsController'
     })

@@ -1,0 +1,36 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="list-group">
+        <span href="#" class="list-group-item" ng-repeat="slot in slots">{{ slot }}</span>
+      </div>
+      <p class="text-right">
+        <a class="btn btn-primary disabled btn-lg" id="bookButton">Book</a>
+      </p>
+    </div>
+    <div class="col-sm-8">
+      <h4>UX decisions:</h4>
+      <ul>
+        <li>When you select a slot for the first time, it automatically select 2 slots, even if it's the last one.</li>
+        <li>Clicking in other slot chage the selection directly</li>
+        <li>If you want to delete the selection, click the first slot selected</li>
+      </ul>
+      <p>__________________________</p>
+      <p>
+        Write an algorithm to allow people to select slots for their booking.
+      </p>
+      Requirements:
+      <ul>
+        <li>Slots are 30min each but the minimum amount bookable is 1 hour</li>
+        <li>When 2+ slots are selected remove the <code>.disabled</code> class from the book button</li>
+        <li>If less than 2 slots are selected the book button should be <code>.disabled</code></li>
+        <li><strong>You can only select consecutive slots</strong></li>
+        <li>Add/remove the class <code>.selected</code> to the <code>.list-group-item</code> if it's a valid slot</li>
+        <li>Show an error if it's not a valid slot</li>
+      </ul>
+      Write your code in this page and <code>booking.js</code>
+    </div>
+  </div>
+</div>
+
+<script src="js/controllers/booking.js"></script>
